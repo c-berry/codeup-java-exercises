@@ -7,18 +7,23 @@ public class Bob {
 
         //This code will continue the conversation with Bob until break conditional is met=>
         while(true){
-            System.out.println("Ask Bob a question");
+            System.out.println();
+            System.out.println("Ask Bob a question:");
             String question = sc.nextLine();
-            if (question.endsWith("?")){
-                System.out.println("Sure, Dude.");
-            } else if (question.endsWith("!")){
-                System.out.println("Whoa, chill out man!");
-            } else if (question.isBlank()) {
-                System.out.println("Fine, I didn't want to talk to you anyways...");
-            } else if (question.equalsIgnoreCase("goodbye")
-            || question.equalsIgnoreCase("bye")){
+            if (question.equalsIgnoreCase("goodbye")
+                    || question.equalsIgnoreCase("bye")){
                 System.out.println("Goodbye.");
                 break;
+            } else if (question.equalsIgnoreCase("what is your favorite color?")){
+                System.out.println("Purple.");
+            } else if(question.equalsIgnoreCase("why?")){
+                System.out.println("Why not?");
+            } else if (question.endsWith("!")){
+                System.out.println("Whoa, chill out man!");
+            }  else if (question.endsWith("?")){
+                System.out.println("Sure, Dude.");
+            }else if (question.isBlank()){
+                System.out.println("Fine, I didn't want to talk to you anyways...");
             } else {
                 System.out.println("Whatever.");
             }
