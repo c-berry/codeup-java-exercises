@@ -5,7 +5,7 @@ public class ControlFlowExercises {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("test");
+//        System.out.println("test");
 
         //Loop Basics:
 //        int i = 5;
@@ -65,54 +65,48 @@ public class ControlFlowExercises {
 //        }
 
         //Table of Powers:
-//        System.out.println("Enter number to increment to:");
-//        int num = sc.nextInt();
-//        System.out.println("Here is your table!");
-//        System.out.println();
-//        System.out.println("number \t|\t squared \t|\t cubed");
-//        System.out.println("------ \t|\t -------- \t|\t -------");
-//        for(int i = 1; i <= num; i++){
-//            System.out.println(i +" \t\t|\t\t"+ i*i +" \t\t|\t\t"+ i*i*i);
-//        }
+//        String answer;
+//
+//        do {
+//                    System.out.println("Enter a number to increment to:");
+//                    int num = sc.nextInt();
+//                    System.out.println("Here is your table:");
+//                    for (int i = 1; i <= num; i++)
+//                        System.out.println(i + " \t\t|\t\t" + i * i + " \t\t|\t\t" + i * i * i);
+//
+//                    System.out.println("Play again? [y/N]");
+//                    answer = sc.next();
+//
+//            } while (answer.equals("y"));
 
-        System.out.println("Do you want to play again? [y/N]");
-        String answer = sc.next();
-        if (answer.equals("y")) {
-            do {
-                if (answer.equals("y")) {
-                    System.out.println("Enter another number to increment to:");
-                    int num2 = sc.nextInt();
-                    for (int i = 1; i <= num2; i++)
-                        System.out.println(i + " \t\t|\t\t" + i * i + " \t\t|\t\t" + i * i * i);
-                    System.out.println("Continue? [y/N]");
-                    answer = sc.next();
-                    if (!answer.equals("y")) {
-                        System.out.println("Thanks for playing!");
-                    }
-                } else {
-                    System.out.println("Thanks for playing!");
-                    break;
-                }
-            } while (answer.equals("y"));
-        }
 
         //Convert to Letter Grades:
-//        System.out.println("Enter your numerical grade:");
-//        int grade = sc.nextInt();
-//
-//        if (grade > 98){
-//            System.out.println("Grade: A+");
-//        } else if (grade > 87){
-//            System.out.println("Grade: A");
-//        } else if (grade > 79){
-//            System.out.println("Grade: B");
-//        } else if (grade > 66){
-//            System.out.println("Grade: C");
-//        } else if (grade > 59){
-//            System.out.println("Grade: D");
-//        } else {
-//            System.out.println("Grade: F");
-//        }
+
+        String answer;
+//        int grade;
+
+        do {
+            System.out.print("Enter your numerical grade:");
+            int grade = sc.nextInt();
+
+            if (grade > 98) {
+                System.out.println("Grade: A+");
+            } else if (grade > 87) {
+                System.out.println("Grade: A");
+            } else if (grade > 79) {
+                System.out.println("Grade: B");
+            } else if (grade > 66) {
+                System.out.println("Grade: C");
+            } else if (grade > 59) {
+                System.out.println("Grade: D");
+            } else {
+                System.out.println("Grade: F");
+            }
+
+            System.out.println("Continue? [y/N]");
+            answer = sc.next();
+
+        } while (answer.equals("y"));
 
 
         //END=>
