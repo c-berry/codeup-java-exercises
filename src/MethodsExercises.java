@@ -98,9 +98,37 @@ public class MethodsExercises {
                     System.out.println("Fact = " + fact);
                 }
             }
+    }
+
+    public static void diceGame(){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter number of sides on your pair of dice:");
+        int sidesOfDice = sc.nextInt();
+
+        if (sidesOfDice == 0){
+            System.out.println("Pick a different number...");
+            diceGame();
+        }
+
+        double diceRoll1 = diceRoll(sidesOfDice);
+        double diceRoll2 = diceRoll(sidesOfDice);
+
+        System.out.println("You rolled: " + diceRoll1);
+        System.out.println("You rolled: "+ diceRoll2);
+
+        System.out.println("Play again? [y/N]");
+        String answer = sc.next();
+        if (answer.equals("y")){
+            diceGame();
+        }
 
     }
 
+    public static double diceRoll(int num){
+        double diceRoll = Math.floor(Math.random() * num + 1);
+        return diceRoll;
+    }
 
     public static void main(String[] args) {
 
@@ -119,8 +147,10 @@ public class MethodsExercises {
 //        getInteger(1,10);
 
         //Exercise 3 =>
-        calculateFactorial();
+//        calculateFactorial();
 
+        //Exercise 4 =>
+        diceGame();
 
 
     }
