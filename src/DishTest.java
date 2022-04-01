@@ -1,7 +1,5 @@
 import java.util.Locale;
 
-
-
 class Dish {
     private int costInCents;
     private String nameOfDish;
@@ -21,7 +19,6 @@ class Dish {
         this.nameOfDish = nameOfDish;
         this.wouldRecommend = wouldRecommend;
     }
-
 
     //Setters:
     public void setCostInCents(int costInCents) {
@@ -81,41 +78,45 @@ public class DishTest {
     public static void main(String[] args) {
 
         Dish dish1 = new Dish(10, "Yum", true);
-
         Dish dish2 = new Dish(13_001, "Not Yum", false);
 
-
-        dish1.printSummary();
-        dish2.printSummary();
         DishTools.shoutDishName(dish1);
         DishTools.analyzeDishCost(dish1);
+        dish1.printSummary();
+
+
+        DishTools.shoutDishName(dish2);
         DishTools.analyzeDishCost(dish2);
+        dish2.printSummary();
+
+
         DishTools.flipRecommendation(dish1);
+        dish1.printSummary();
 
     }
 
 }
 
-class DishTools{
+class DishTools {
 
     public static final int AVG_COST_OF_DISH = 13_000;
 
-    public static void shoutDishName(Dish dish){
-        System.out.println(dish.getNameOfDish().toUpperCase(Locale.ROOT));
+    public static void shoutDishName(Dish dish) {
+        System.out.println(dish.getNameOfDish().toUpperCase(Locale.ROOT) + "!");
     }
 
-    public static void analyzeDishCost(Dish dish){
+    public static void analyzeDishCost(Dish dish) {
         int cost = dish.getCostInCents();
         if (cost > AVG_COST_OF_DISH){
-            System.out.println("More expensive that average");
+            System.out.println("More expensive that average.");
         } else {
-            System.out.println("Less expensive than average");
+            System.out.println("Less expensive than average.");
         }
     }
 
-    public static void flipRecommendation(Dish dish){
+    public static void flipRecommendation(Dish dish) {
         boolean yum = dish.isWouldRecommend();
-        System.out.println(!yum);
+        dish.setWouldRecommend(!yum);
     }
 
 }
