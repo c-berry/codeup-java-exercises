@@ -35,6 +35,7 @@ public class PersonExercise{
 
 
         Person person1 = new Person("John", 20);
+        Person person2 = new Person("Greg", 18);
 
 //        person1.sayHello();
 //        Person person2 = person1;
