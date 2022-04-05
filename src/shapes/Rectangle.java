@@ -1,52 +1,62 @@
 package shapes;
 
-public class Rectangle {
-    protected int length;
+public class Rectangle extends Quadrilateral {
+
+    protected  int length;
     protected int width;
 
-    //constructors =>
-    public Rectangle(){
-        System.out.println("Rectangle created.");
-    }
-    public Rectangle(int length, int width){
+    protected Rectangle(){};
+
+    protected Rectangle(int length, int width){
         this.length = length;
         this.width = width;
     }
 
-    //getter =>
-    public int getLength() {
-        return length;
-    }
-
-    //setter =>
-    public void setLength(int length) {
-        this.length = length;
-    }
-
-    //methods =>
-    public int getArea(){
-        return length * width;
-    }
-    public int getPerimeter(){
+    @Override
+    public double getPerimeter() {
         return (2 * length) + (2 * width);
     }
 
-}
-
-class ShapesTest {
-    public static void main(String[] args) {
-        Rectangle box1 = new Rectangle(5, 4);
-
-        System.out.println("box1 perimeter: "+ box1.getPerimeter());
-        System.out.println("box1 area: " + box1.getArea());
-
-        Rectangle box2 = new Square(5);
-
-        System.out.println("box2 perimeter: " + box2.getPerimeter());
-        System.out.println("box2 area: " + box2.getArea());
-
+    @Override
+    public double getArea() {
+        return length * width;
     }
+
+
+    //BEFORE INTERFACES AND ABSTRACT REFACTOR:
+//    protected int length;
+//    protected int width;
+//
+//    //constructors =>
+//    public Rectangle(){
+//        System.out.println("Rectangle created.");
+//    }
+//    public Rectangle(int length, int width){
+//        this.length = length;
+//        this.width = width;
+//    }
+//
+//    //getter =>
+//    public int getLength() {
+//        return length;
+//    }
+//
+//    //setter =>
+//    public void setLength(int length) {
+//        this.length = length;
+//    }
+//
+//    //methods =>
+//    public int getArea(){
+//        return length * width;
+//    }
+//    public int getPerimeter(){
+//        return (2 * length) + (2 * width);
+//    }
+
 }
+
+
 
 
 
