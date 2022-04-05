@@ -1,3 +1,5 @@
+package birds;
+
 public class Bird {
     // can it fly?
     private boolean canFly;
@@ -30,6 +32,6 @@ public class Bird {
     }
 }
 
-class Finch extends Duck{
+class Finch extends Duck {
 
 }

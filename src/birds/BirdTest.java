@@ -1,3 +1,5 @@
+package birds;
+
 public class BirdTest {
     public static void main(String[] args) {
         Bird cardinal = new Bird();
@@ -8,7 +10,7 @@ public class BirdTest {
         cardinal.move();
 
         Duck mallard = new Duck();
-        mallard.setName("Mallard Duck");
+        mallard.setName("Mallard birds.Duck");
         mallard.makeNoise();
 
         Finch goldenFinch = new Finch();
