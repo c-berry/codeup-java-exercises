@@ -1,3 +1,5 @@
+package monsters;
+
 public class Monster {
     private int armorClass;
     private int hitPoints;
@@ -7,6 +9,10 @@ public class Monster {
         return name;
     }
 
+    //remember this built-in method! =>
+    public String toString(){
+        return name;
+    }
     public void setName(String name) {
         this.name = name;
     }

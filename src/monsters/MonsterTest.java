@@ -1,4 +1,4 @@
-import org.w3c.dom.ls.LSOutput;
+package monsters;
 
 public class MonsterTest {
 
