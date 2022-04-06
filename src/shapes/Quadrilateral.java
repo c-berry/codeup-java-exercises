@@ -9,23 +9,26 @@ public abstract class Quadrilateral extends Shape implements Measurable {
     public Quadrilateral(){
         System.out.println("Quadrilateral created.");
     }
+
     public Quadrilateral(int length, int width){
         this.length = length;
         this.width = width;
 
     }
 
-    //getters =>
+    //getters and setters =>
     public int getLength() {
         return length;
     }
-    public void setLength(int length) {
-        this.length = length;
-    }
-    //setters =>
-    public void setWidth(int width) {
-        this.width = width;
-    }
+
+    public abstract void setLength(int length);
+//    {
+//        this.length = length;
+//    }
+    public abstract void setWidth(int width);
+//    {
+//        this.width = width;
+//    }
 
     public int getWidth() {
         return width;

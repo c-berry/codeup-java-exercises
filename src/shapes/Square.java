@@ -4,13 +4,23 @@ public class Square extends Quadrilateral {
 
     protected int side;
 
-
-    protected Square(){};
+    protected Square(){
+        System.out.println("Square created.");
+    }
 
     protected Square(int side){
         super(side, side);
         this.side = side;
+    }
 
+    @Override
+    public void setLength(int length) {
+//        this.length = length;
+    }
+
+    @Override
+    public void setWidth(int width) {
+//        this.width = width;
     }
 
     @Override

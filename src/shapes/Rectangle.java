@@ -5,13 +5,34 @@ public class Rectangle extends Quadrilateral {
     protected  int length;
     protected int width;
 
-    protected Rectangle(){};
+    protected Rectangle(){
+        System.out.println("Rectangle created.");
+    }
 
     protected Rectangle(int length, int width){
         this.length = length;
         this.width = width;
     }
 
+    //getters and setters =>
+    @Override
+    public int getLength() {
+        return length;
+    }
+    @Override
+    public int getWidth() {
+        return width;
+    }
+    @Override
+    public void setLength(int length) {
+        this.length = length;
+    }
+    @Override
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    //methods =>
     @Override
     public double getPerimeter() {
         return (2 * length) + (2 * width);
