@@ -49,18 +49,26 @@ public class GradesApplication {
         students.put("jSON", jason);
         students.put("here's-johnny", john);
 
-        System.out.print("\nList of students by GitHub username: ");
-        for (Map.Entry<String, Student> student : students.entrySet()){
-            System.out.print("|" + student.getKey() + "|" + " ");
-        }
-        System.out.println();
+//        System.out.print("\nList of students by GitHub username: ");
+//        for (Map.Entry<String, Student> student : students.entrySet()){
+//            System.out.print("|" + student.getKey() + "|" + " ");
+//        }
+//        System.out.println();
 
         while(true) {
             System.out.println("Would you like to view student info? [y/N]");
             String response = sc.next();
+
             if (response.equalsIgnoreCase("y")
             || response.equalsIgnoreCase("yes")) {
+
                 System.out.println("Which student would you like to see?");
+
+                System.out.print("List of students by GitHub username: ");
+                for (Map.Entry<String, Student> student : students.entrySet()){
+                    System.out.print("|" + student.getKey() + "|" + " ");
+                }
+
                 String answer = sc.next();
                 switch (answer) {
                     case "c-berry" -> {
@@ -87,6 +95,7 @@ public class GradesApplication {
                 }
             } else if (response.equalsIgnoreCase("n")
             || response.equalsIgnoreCase("no")) {
+
                 System.out.println("Goodbye.");
                 break;
             }

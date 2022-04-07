@@ -1,3 +1,5 @@
+package warmups;
+
 import java.util.Scanner;
 
 public class JavaWarmups {
@@ -23,7 +25,7 @@ public class JavaWarmups {
 //
 //        Scanner sc = new Scanner(System.in);
 
-//        Create a Java class, JavaWarmups. Add a main method to test the warmup methods.
+//        Create a Java class, warmups.JavaWarmups. Add a main method to test the warmup methods.
 //                Create a method, returnFirstCapitalLetter, that takes in a string and returns the first capital letter as a char. If no capital letter is found, return a single space character ' '. Assume only letters in the input string and all possible inputs will have at least one letter.
 //        System.out.println(returnFirstCapitalLetter("hellO")); // returns 'O'
 //        System.out.println(returnFirstCapitalLetter("hello")); // returns ' '
@@ -32,22 +34,25 @@ public class JavaWarmups {
 //        System.out.println(returnFirstCapitalLetter("H"));     // returns) 'H'
 
 
-        int[] numbers = new int[5];
-        numbers[0] = 5;
-        numbers[1] = 10;
-        numbers[2] = 15;
-        numbers[3] = 20;
-        numbers[4] = 25;
+//        int[] numbers = new int[5];
+//        numbers[0] = 5;
+//        numbers[1] = 10;
+//        numbers[2] = 15;
+//        numbers[3] = 20;
+//        numbers[4] = 25;
+//
+//        for (int i = 0; i < numbers.length; i++){
+//            System.out.println(numbers[i]);
+//        }
+//
+//        for (int number : numbers) {
+//            System.out.println(number);
+//        }
 
-        for (int i = 0; i < numbers.length; i++){
-            System.out.println(numbers[i]);
-        }
-
-        for (int number : numbers) {
-            System.out.println(number);
-        }
 
 
         //END =>
     }
 }
+
+
