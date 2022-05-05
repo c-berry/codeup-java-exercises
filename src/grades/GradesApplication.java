@@ -11,7 +11,7 @@ public class GradesApplication {
     public static void main(String[] args) {
 
 //        Input sc = new Input();
-        Scanner sc = new Scanner(System.in);;
+        Scanner sc = new Scanner(System.in);
 
         Student chris = new Student("Chris", "c-berry");
         Student oscar = new Student("Oscar", "oscar-ct");

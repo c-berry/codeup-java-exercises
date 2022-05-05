@@ -1,6 +1,7 @@
 package warmups;
-
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class JavaWarmups {
 
@@ -50,9 +51,23 @@ public class JavaWarmups {
 //        }
 
 
+        String[] names = {"Rick", "Stacey", "Brad", "Becca"};
+        String x;
+        try {
+            x = names[100];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Exception caught!");
+            x = "";
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            System.out.println("This will always run.");
+        }
 
-        //END =>
-    }
+
+
+
+    }   // <= END OF MAIN
 }
 
 

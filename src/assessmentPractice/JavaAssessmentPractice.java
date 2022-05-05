@@ -1,4 +1,4 @@
-package warmups;
+package assessmentPractice;
 
 //# Java Assessment Practice Problems
 //
@@ -16,6 +16,8 @@ package warmups;
 //        12. In your Practice class, create a static method named multiplyAll. It should accept an integer and an ArrayList of integers. It should take the ArrayList argument and multiply all its elements by the value of the integer argument.
 //        12b. In your Pet class, create a static method named allSnuggle. It should accept an ArrayList of PetDog objects and output the result of calling the snuggle method on all of them. Create an ArrayList with at least three PetDog instances in the PetDogTest class. Call the allSnuggle method and pass it the ArrayList. Verify that the allSnuggle method works correctly.
 
+import java.util.ArrayList;
+
 public class JavaAssessmentPractice {
 
     public static int subtractTen(int num){
@@ -30,40 +32,23 @@ public class JavaAssessmentPractice {
         return sum / arr.length;
     }
 
+    public static void mutliplyAll(int num, ArrayList<Integer> nums){
+        for (Integer integer : nums) {
+            System.out.println(num * integer);
 
-}
+//            for(int i = 0; i < nums.size(); i++){
+//                System.out.println(num * nums.get(i));
+//            }
+        }
 
-class Practice {
-    public static void main(String[] args) {
 
-    }
-}
 
-class Pet {
-
-    private String name;
-    private String type;
-
-    public Pet(){}
-
-    public Pet(String name, String type){
-        this.name = name;
-        this.type = type;
-    }
-
-    public String getName() {
-        return name;
-    }
-    public String getType() {
-        return type;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-    public void setType(String type) {
-        this.type = type;
     }
 
 
 }
+
+
+
+
+

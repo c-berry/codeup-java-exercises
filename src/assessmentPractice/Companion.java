@@ -1,4 +1,4 @@
-package warmups;
+package assessmentPractice;
 
 public interface Companion {
 

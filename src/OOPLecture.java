@@ -18,7 +18,7 @@
 //
 //class Post {
 //    private String author;
-//    //  private Person author;
+//    //  private person.Person author;
 //    private String title;
 //    private String content;
 //    private String creationDate;
@@ -40,7 +40,7 @@
 //        this.creationDate = creationDate;
 //    }
 //
-//    public Post(String title, Person author, String content, String creationDate) {
+//    public Post(String title, person.Person author, String content, String creationDate) {
 //        this(title,author.getFullName(),content, creationDate);
 //    }
 //
@@ -48,7 +48,7 @@
 //        this(copyPost.getTitle(),copyPost.getAuthor(),copyPost.getContent(), copyPost.getCreationDate());
 //    }
 //
-//    public Post(String title, Person author, String content) {
+//    public Post(String title, person.Person author, String content) {
 //        this(title, author.getFullName(), content, DateUtils.getTodaysDate());
 //    }
 //
@@ -107,7 +107,7 @@
 //
 //}
 //
-//class Person {
+//class person.Person {
 //    private String firstName;
 //    private String lastName;
 //    private int age;
@@ -115,9 +115,9 @@
 //
 //    private static String description = "Object represents a person.";
 //
-//    public Person() {}
+//    public person.Person() {}
 //
-//    public Person(String first, String last) {
+//    public person.Person(String first, String last) {
 //        this.firstName = first;
 //        this.lastName = last;
 //    }
@@ -163,7 +163,7 @@
 //    }
 //
 //    public static void setTotalPeople(long totalPeople) {
-//        Person.totalPeople = totalPeople;
+//        person.Person.totalPeople = totalPeople;
 //    }
 //
 //
@@ -219,11 +219,11 @@
 //
 //        // People class!
 //
-//        Person firstPerson = new Person("Justin","Reich");
+//        person.Person firstPerson = new person.Person("Justin","Reich");
 //
 //        System.out.println("firstPerson.sayHello() = " + firstPerson.sayHello());
 //
-//        Person secondPerson = new Person();
+//        person.Person secondPerson = new person.Person();
 //
 //        secondPerson.setFirstName("Dane");
 //        secondPerson.setLastName("Miller");

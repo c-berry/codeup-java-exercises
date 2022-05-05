@@ -175,9 +175,6 @@ public class MethodsExercises {
 
         //Exercise 5 =>
         guessingGame();
-
-
-
     }
 
     //END =>
